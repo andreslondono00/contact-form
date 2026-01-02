@@ -17,37 +17,75 @@
 
 <body>
 
-    Contact Us
+    <div class="form_container">
 
-    First Name
-    This field is required
+        <form class="form" action="">
 
-    Last Name
-    This field is required
+            <h1 class="contact_us">Contact Us</h1>
 
-    Email Address
-    Please enter a valid email address
-    This field is required
+            <div class="first_last_name">
 
-    Query Type
-    General Enquiry
-    Support Request
-    Please select a query type
+                <div class="input_group">
+                    <label class="first_name" for="first_name">First Name <b>*</b></label>
+                    <input type="text" id="first_name">
+                    <!-- This field is required -->
+                </div>
 
-    Message
-    This field is required
+                <div class="input_group">
+                    <label class="last_name" for="last_name">Last Name <b>*</b></label>
+                    <input type="text" id="last_name">
+                    <!-- This field is required -->
+                </div>
 
-    I consent to being contacted by the team
-    To submit this form, please consent to being contacted
+            </div>
 
-    Submit
+            <div class="input_group">
+                <label for="email_address">Email Address <b>*</b></label>
+                <input type="text" id="email_address">
+            </div>
 
-    Message Sent!
-    Thanks for completing the form. We'll be in touch soon!
+            <!-- Please enter a valid email address -->
+            <!-- This field is required -->
+
+            <label class="query_type">Query Type <b>*</b></label>
+
+            <div class="segments">
+
+                <div class="radio_input">
+                    <label for="general_enquiry">
+                        <input name="query_type" type="radio" id="general_enquiry">
+                        General Enquiry</label>
+                </div>
+
+                <div class="radio_input">
+                    <label for="support_request"><input name="query_type" type="radio" id="support_request">
+                        Support Request</label>
+                </div>
+                <!-- Please select a query type -->
+            </div>
+
+            <label class="message" for="message">Message <b>*</b></label>
+            <!-- This field is required -->
+            <textarea rows="4" cols="50" id="message" name="message"></textarea>
+
+            <div class="agrement">
+                <input class="checkbox" type="checkbox">
+                <p> I consent to being contacted by the team <b>*</b></p>
+            </div>
+            <!-- To submit this form, please consent to being contacted -->
+
+            <button class="submit_button" id="submit_button" type="submit">Submit</button>
+
+            <!-- Message Sent!
+            Thanks for completing the form. We'll be in touch soon! -->
+    </div>
+
+    </form>
 
     <footer class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io/challenges/contact-form--G-hYlqKJj">Frontend Mentor</a>
-        Coded by <a href="#">Your Name Here</a>
+        Challenge by <a href="https://www.frontendmentor.io/challenges/contact-form--G-hYlqKJj" target="_blank">Frontend
+            Mentor</a>
+        Coded by <a href="https://github.com/andreslondono00/contact-form" target="_blank">Andrés Londoño</a>
     </footer>
 
     <script type="text/javascript" src="./js/form.js"></script>

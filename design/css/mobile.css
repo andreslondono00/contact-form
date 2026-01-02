@@ -1,0 +1,54 @@
+@media (max-width: 768px) {
+
+    .form_container {
+        width: 275px;
+        height: 95%;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    body {
+        font-size: 14px;
+    }
+
+    .first_last_name {
+        display: block;
+    }
+
+    .last_name {
+        margin-top: 20px;
+    }
+
+    .segments {
+        flex-direction: column;
+        width: 200%;
+    }
+
+    .message {
+        margin-top: 20px;
+    }
+
+    #message {
+        height: 180px;
+        padding: 10px;
+    }
+
+    .checkbox {
+        width: 20px;
+    }
+
+    .agrement {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .submit_button {
+        border-radius: 8px;
+        font-weight: 700;
+    }
+
+    .attribution {
+        display: none;
+    }
+}

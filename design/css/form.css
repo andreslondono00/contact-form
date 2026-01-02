@@ -4,13 +4,145 @@ body {
 }
 
 body {
-    background-color: hsl(275, 100%, 97%);
-    font-family: Work Sans;
+    background-color: hsl(148, 38%, 91%);
+    font-family: Karla;
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 400;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.form_container {
+    background-color: white;
+    width: 690px;
+    display: flex;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact_us {
+    margin-bottom: 10px;
+}
+
+.first_last_name {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.input_group input {
+    padding: 8px 16px;
+    border: 1px solid hsl(186, 15%, 59%);
+    border-radius: 5px;
+    width: 100%;
+    height: 40px;
+}
+
+.input_group label {
+    margin-bottom: 10px;
+    display: inline-block;
+    color: hsl(187, 24%, 22%);
+}
+
+.input_group input:hover,
+.input_group input:focus {
+    border-color: hsl(169, 82%, 27%);
+    cursor: pointer;
+}
+
+.query_type {
+    display: flex;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    color: hsl(187, 24%, 22%);
+}
+
+.segments {
+    display: flex;
+    gap: 15px;
+}
+
+.radio_input {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border: 1px solid hsl(186, 15%, 59%);
+    width: 50%;
+    padding: 8px 20px;
+    border-radius: 5px;
+    color: hsl(187, 24%, 22%);
+}
+
+.radio_input:hover,
+.radio_input:focus {
+    cursor: pointer;
+    border-color: hsl(169, 82%, 27%);
+}
+
+.radio_input input[type=radio] {
+    width: 16px;
+    height: 16px;
+    accent-color: hsl(169, 82%, 27%);
+    cursor: pointer;
+}
+
+.radio_input input[type="radio"]:checked+label {
+    background-color: red;
+}
+
+.message {
+    margin-top: 10px;
+    color: hsl(187, 24%, 22%);
+}
+
+#message {
+    height: 90px;
+    border-radius: 5px;
+    border: 1px solid hsl(186, 15%, 59%);
+    margin-top: 5px;
+    margin-bottom: 20px;
+    padding: 8px 16px;
+    resize: none;
+}
+
+.checkbox {
+    width: 16px;
+}
+
+.checkbox:checked {
+    accent-color: hsl(169, 82%, 27%);
+}
+
+.agrement {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.agrement p {
+    color: hsl(187, 24%, 22%);
+}
+
+.submit_button {
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: hsl(169, 82%, 27%);
+    margin-top: 20px;
+    color: white;
+    font-weight: 700;
+}
+
+b {
+    color: hsl(169, 82%, 27%);
+    width: 5px;
 }
 
 .attribution {
@@ -24,6 +156,6 @@ body {
 }
 
 .attribution a {
-    color: hsl(280.92deg 82.98% 53.92%);
+    color: hsl(0, 66%, 54%);
     text-decoration: none;
 }
