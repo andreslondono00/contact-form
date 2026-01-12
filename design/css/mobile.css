@@ -1,15 +1,7 @@
 @media (max-width: 768px) {
 
     .form_container {
-        width: 275px;
-        height: 95%;
-        display: flex;
-        flex-direction: column;
-        padding: 20px;
-    }
-
-    body {
-        font-size: 14px;
+        width: 50%;
     }
 
     .first_last_name {
@@ -36,6 +28,13 @@
 
     .checkbox {
         width: 20px;
+    }
+
+    .completed_form {
+        width: 24vh;
+        height: 12vh;
+        padding: 15px;
+        top: 5px;
     }
 
     .agrement {

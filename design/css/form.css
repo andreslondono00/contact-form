@@ -36,12 +36,24 @@ body {
     margin-bottom: 20px;
 }
 
+#first_name_required,
+#last_name_required,
+#email_address_required,
+#select_email_address,
+#query_type_error,
+#message_required,
+#submit_error {
+    display: none;
+    color: hsl(0, 66%, 54%);
+}
+
 .input_group input {
     padding: 8px 16px;
     border: 1px solid hsl(186, 15%, 59%);
     border-radius: 5px;
     width: 100%;
     height: 40px;
+    margin-bottom: 5px;
 }
 
 .input_group label {
@@ -74,6 +86,7 @@ body {
     gap: 12px;
     border: 1px solid hsl(186, 15%, 59%);
     width: 50%;
+    margin-bottom: 15px;
     padding: 8px 20px;
     border-radius: 5px;
     color: hsl(187, 24%, 22%);
@@ -92,23 +105,23 @@ body {
     cursor: pointer;
 }
 
-.radio_input input[type="radio"]:checked+label {
-    background-color: red;
-}
-
-.message {
-    margin-top: 10px;
-    color: hsl(187, 24%, 22%);
+.radio_input:has(.input_radio:checked) {
+    background-color: hsl(148, 38%, 91%);
 }
 
 #message {
-    height: 90px;
+    display: flex;
+    width: 100%;
+    height: 100px;
     border-radius: 5px;
     border: 1px solid hsl(186, 15%, 59%);
-    margin-top: 5px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     padding: 8px 16px;
     resize: none;
+}
+
+.input_group .message {
+    margin-top: 20px;
 }
 
 .checkbox {
@@ -122,7 +135,8 @@ body {
 .agrement {
     display: flex;
     gap: 15px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    margin-top: 30px;
 }
 
 .agrement p {
@@ -135,7 +149,7 @@ body {
     border-radius: 10px;
     border: none;
     background-color: hsl(169, 82%, 27%);
-    margin-top: 20px;
+    margin-top: 30px;
     color: white;
     font-weight: 700;
 }
@@ -143,6 +157,38 @@ body {
 b {
     color: hsl(169, 82%, 27%);
     width: 5px;
+}
+
+.icon_message_sent {
+    display: flex;
+    gap: 10px;
+    font-weight: 700;
+}
+
+.icon_message_sent img {
+    width: 20px;
+    height: 20px;
+    align-self: center;
+}
+
+.completed_form {
+    width: 400px;
+    height: 95px;
+    background-color: hsl(187, 24%, 22%);
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    position: absolute;
+    top: 45px;
+    display: none;
+}
+
+.form_message {
+    font-size: 14px;
+    margin-top: 10px;
 }
 
 .attribution {
